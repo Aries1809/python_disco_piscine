@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 
-def low(s):
+import sys
+
+def downcase_it(s):
   ret = s.lower()
   return ret
 
-s = input("Enter a string: ")
-print(f"{low(s)}")
+l = len(sys.argv)
+
+if l < 2:
+    print("None")
+    exit()
+
+for n in range(1, l):
+    print(f"{downcase_it(sys.argv[n])}")

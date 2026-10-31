@@ -5,7 +5,7 @@ import sys
 l = len(sys.argv)
 
 if l != 2:
-  print(None)
+  print("None")
 else:
   s = input("What was the parameter? ")
   if s == sys.argv[1]:

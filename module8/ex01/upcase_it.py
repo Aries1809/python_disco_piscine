@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-def upr(s):
+def upcase_it(s):
   ret = s.upper()
   return ret
 
 s = input("Enter a string: ")
-print(f"{upr(s)}")
+print(f"{upcase_it(s)}")

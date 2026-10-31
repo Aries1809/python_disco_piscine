@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import math
+
 n = float(input("Give me a number: "))
 
-print(f"{int(n) + 1}")
+print(f"{math.ceil(n)}")

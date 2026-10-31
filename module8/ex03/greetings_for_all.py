@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-def hello(nm="noble stranger"):
+def greetings(nm="noble stranger"):
   if isinstance(nm, str) == False:
     print("Error! It was not a name.")
-    exit()
+    return()
   print(f"Hello, {nm}.")
 
 s = input("Enter your name: ")
 if (s == "no") or (s == ""):
-  hello()
+  greetings()
 else:
-  hello(s)
+  greetings(s)
